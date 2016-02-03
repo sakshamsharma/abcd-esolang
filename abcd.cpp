@@ -74,7 +74,6 @@ int main(int argc, char *argv[])
     else if ( Program[Position] == "o" ) { Register3 = Register1 and Register2 ;}
     else if ( Program[Position] == "p" ) { Register3 = Register1 or Register2 ;}
     else if ( Program[Position] == "q" ) { Register3 = Register1 xor Register2 ;}
-    else if ( Program[Position] == "q" ) { Register3 = Register1 xor Register2 ;}
     else if ( Program[Position] == "r" ) { Register3 = Register1 + Register2 ;}
     else if ( Program[Position] == "s" ) { Register3 = Register1 - Register2 ;}
     else if ( Program[Position] == "t" ) { Register3 = Register1 * Register2 ;}
