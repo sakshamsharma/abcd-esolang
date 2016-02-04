@@ -243,9 +243,8 @@ Note: All these cases are separated by 'break;' statements in the actual code.
 # ASCII Table
 You'll **NEED** this:
 
-+-----+--------+----------------------------------------+
 | DEC | Symbol |              Description               |
-+-----+--------+----------------------------------------+
+|-----|--------|----------------------------------------|
 |  32 |        | Space                                  |
 |  33 | !      | Exclamation mark                       |
 |  34 | "      | Double quotes (or speech marks)        |
@@ -342,4 +341,4 @@ You'll **NEED** this:
 | 125 | }      | Closing brace                          |
 | 126 | ~      | Equivalency sign - tilde               |
 | 127 |        | Delete                                 |
-+-----+--------+----------------------------------------+
+
