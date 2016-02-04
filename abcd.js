@@ -49,6 +49,7 @@ abcd = function(program, input, outputElem) {
       break;
     case "e":
       Register1 += 100;
+      break;
     case "f":
       Register1 -= 100;
       break;
