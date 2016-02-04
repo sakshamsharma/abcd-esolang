@@ -1,5 +1,5 @@
 ----
-abcd
+title: abcd-esolang Documentation
 ----
 
 abcd is an esoteric language. In other words, it is a language deliberately made obfuscated and confusing.
