@@ -201,6 +201,7 @@ abcd = function(program, input, outputElem) {
 
     if(finished || iter > 2000)
       break;
+    iter++;
     Position++;
   }
 }
