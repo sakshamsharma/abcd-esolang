@@ -50,7 +50,7 @@ int main(int argc, char *argv[])
     Program[Num_char] = Character;
     Num_char ++;
 
-  } while ( Character != EOF );
+  } while ( Character != EOF  && Num_char < 9999);
 
   fclose(FileInd);
 
@@ -109,6 +109,13 @@ int main(int argc, char *argv[])
     else if ( Program[Position] == "Y" ) { Register4[Mode] = 0 ;}
     else if ( Program[Position] == "Z" ) { Mode = ( Mode + 1 ) % 2 ;}
     else if ( Program[Position] == "?" ) { if (Temp == EOF) break; }
+
+    if(Register4[0] > 1023) {
+      return 1;
+    }
+    if(Register4[1] > 9999) {
+      return 3;
+    }
 
     Position ++;
   } while ( Position <= Num_char && iter < 2000);
