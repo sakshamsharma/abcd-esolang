@@ -12,9 +12,12 @@ abcd = function(program, input, outputElem) {
   var Register4 = [0,0];
   var Mode = 0;
   var Memory = [];
+  for (var i = 0; i < 1023; i++) {
+    Memory[i] = 0;
+  }
   var Temp = 0;
-  var finished = 0;
-  var iter = 0;
+  var Finished = 0;
+  var Iter = 0;
 
   function inputFxn(regNum) {
 
@@ -33,6 +36,7 @@ abcd = function(program, input, outputElem) {
 
   outputElem.innerHTML = "";
   while(Position < Program.length) {
+    Character=Program[Position];
 
     switch(Program[Position]) {
     case "a":
@@ -195,13 +199,13 @@ abcd = function(program, input, outputElem) {
       break;
     case "?":
       if(readInput >= input.length + 1)
-        finished=1;
+        Finished=1;
       break;
     }
 
-    if(finished || iter > 2000)
+    if(Finished || Iter > 20000)
       break;
-    iter++;
+    Iter++;
     Position++;
   }
 }

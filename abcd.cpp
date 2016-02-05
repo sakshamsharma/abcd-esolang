@@ -119,5 +119,5 @@ int main(int argc, char *argv[])
 
     iter++;
     Position ++;
-  } while ( Position <= Num_char && iter < 2000);
+  } while ( Position <= Num_char && iter < 20000);
 }
