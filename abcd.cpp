@@ -11,7 +11,6 @@ int Position = 0;
 int Character;
 string Program[10000];
 
-string Result;
 int Register1 = 0;
 int Register2 = 0;
 int Register3 = 0;
@@ -112,5 +111,5 @@ int main(int argc, char *argv[])
     else if ( Program[Position] == "?" ) { if (Temp == EOF) break; }
 
     Position ++;
-  } while ( Position <= Num_char );
+  } while ( Position <= Num_char && iter < 2000);
 }
