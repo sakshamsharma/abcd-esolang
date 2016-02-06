@@ -19,42 +19,51 @@
     </section>
 
     <section class="main-content">
-      <h1>
-<a id="abcd-esolang" class="anchor" href="#abcd-esolang" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>abcd-esolang</h1>
 
-<p>A modified esolang made for Chaos '16 - Techkriti IIT Kanpur</p>
 
-<p><em>NOTE</em> This language mostly based on another Esolang whose name would be revealed once the contest is over.
-Credits where they're due.</p>
+      <h1>abcd-esolang</h1>
 
-<h1>
-<a id="so-how-to-begin" class="anchor" href="#so-how-to-begin" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>So how to begin?</h1>
+      <em><p>A modified esolang tailor-made for Chaos '16 - Techkriti IIT Kanpur.</p></em>
 
-<p>If you use git, you know what to do. Otherwise, go here:
-[<a href="https://github.com/sakshamsharma/abcd-esolang/archive/master.zip">https://github.com/sakshamsharma/abcd-esolang/archive/master.zip</a>].
-This should download this folder as a .zip file. Extract it.
-If you're browsing this on the website for this repository <a href="http://www.acehack.org/abcd-esolang">here</a>,
-you should see the download buttons at the top.</p>
+      <h1>So how to begin</h1>
 
-<h1>
-<a id="linux" class="anchor" href="#linux" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Linux</h1>
+      <p>There are 2 major ways to use this language.</p>
 
-<p><code>cd abcd-esolang</code> (or whatever the name of the file is)
-<code>g++ abcd.cpp -o abcd</code></p>
+      <h2>Online:</h2>
 
-<p>You should now write your programs in files and run them as follows:</p>
+      <p>Taking note of the issues in the preceeding years, this year we ensured that the interpreter for the language is available online. We've made an interpreter in JavaScript (Open Source), and have deployed it online as well.<br />You can access it <b><a href='/interpreter.html'>here</a></b>. Feel free to write and test your code here.<br />We've also ensured that it does not crash your browser if you mess up. So the number of instructions you can run is capped at 20000.</p>
 
-<p>Assuming your program is in the same folder as the one above.</p>
+      <h2>Offline:</h2>
 
-<pre><code>./abcd &lt;program.ab&gt;
-</code></pre>
+      <p>If you use git, you know what to do. Clone the repo, download the source code.<br />Compile the C++ code. Use it as you would.<br />Otherwise, go here:<br />[<a href='https://github.com/sakshamsharma/abcd-esolang/archive/master.zip'>https://github.com/sakshamsharma/abcd-esolang/archive/master.zip</a>].<br />This should download this folder as a .zip file. Extract it</p>
 
-<p>You can also add abcd to your path using the following command:</p>
+      <h3>Linux</h3>
 
-<pre><code>echo "PATH=/home/&lt;youruser&gt;/abcd-esolang/:$PATH" &gt; ~/.bashrc
-</code></pre>
+      <p><code>cd abcd-esolang</code> (or whatever the name of the file is)<br /><code>g++ abcd.cpp -o abcd</code></p>
 
-<p>Of course, you need to replace  with your username, and adjust the path appropriately.</p>
+      <p>You should now write your programs in files and run them as follows:</p>
+
+      <p>Assuming your program is in the same folder as the one above.</p>
+
+      <div class="highlight"><pre lang="">./abcd <program.ab>
+      </pre></div>
+
+      <p>You can also add abcd to your path using the following command:</p>
+
+      <div class="highlight"><pre lang="">echo "PATH=/home/<youruser>/abcd-esolang/:$PATH" > ~/.bashrc
+      </pre></div>
+
+      <p>Of course, you need to replace <youruser> with your username, and adjust the path appropriately.</p>
+
+      <h3>Windows</h3>
+
+      <p>This is slightly more tough. You should install MinGW and get an installation of g++ on your PC. Not recommended.</p>
+
+      <h1>NOTE</h1>
+
+      <p>We've tried to keep both the C++ and the JavaScript interpreters to behave the same, it may happen that they may not.<br />The judging will be done on the C++ interpreter.</p>
+      <p>Also, This language is <b>NOT</b> the "ABCD" esolang you'd find if you google for it. I'd suggest you focus on the contest.<br />Googling won't help &#9786</p>
+
 
       <footer class="site-footer">
         <span class="site-footer-owner"><a href="https://github.com/sakshamsharma/abcd-esolang">abcd-esolang</a> is maintained by <a href="https://github.com/sakshamsharma">sakshamsharma</a>.</span>
@@ -64,6 +73,6 @@ you should see the download buttons at the top.</p>
 
     </section>
 
-  
+
   </body>
 </html>
