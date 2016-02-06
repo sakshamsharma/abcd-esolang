@@ -16,6 +16,7 @@
     <section class="page-header">
       <h1 class="project-name">Chaos 2016</h1>
       <h2 class="project-tagline">Techkriti IIT Kanpur</h2>
+      <div id="time">Time left till start</div><br/><br/>
       <div class="countdown" style="margin-right: auto; margin-left: auto; width: 480px;"></div>
     </section>
 
@@ -37,6 +38,16 @@ var toTime = new Date();
 
 var differenceTravel = fromTime.getTime() - toTime.getTime();
 var seconds = Math.floor((differenceTravel) / (1000));
+if(seconds < 0) {
+  document.getElementById('time').innerHTML="Time till end of contest";
+  fromTime = new Date('2016-02-06T23:59:59+0530');
+  differenceTravel = fromTime.getTime() - toTime.getTime();
+  seconds = Math.floor((differenceTravel) / (1000));
+  if(seconds < 0) {
+    seconds=0;
+    document.getElementById('time').innerHTML="Contest has ended!";
+  }
+}
 
 var clock = $('.countdown').FlipClock(seconds, {
   countdown: true
