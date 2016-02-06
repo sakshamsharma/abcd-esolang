@@ -171,7 +171,7 @@ abcd = function(program, input, outputElem) {
       if(Register1 <= Register2) Position = Register4[1]-1;
       break;
     case "R":
-      if(Register3) Position = Register4[1]-1;
+      if(Register3 === 0) Position = Register4[1]-1;
       break;
     case "S":
       Register4[Mode] += 1;
