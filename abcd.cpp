@@ -93,7 +93,7 @@ int main(int argc, char *argv[])
     else if ( Program[Position] == "I" ) { Memory[Register4[0]] = Register3 ;}
     else if ( Program[Position] == "J" ) { inputFxn(1, 0) ;}
     else if ( Program[Position] == "K" ) { inputFxn(2, 0) ;}
-    else if ( Program[Position] == "L" ) { cout << char(Register3) ;}
+    else if ( Program[Position] == "L" ) { if(Register3!=0) cout << char(Register3) ;}
     else if ( Program[Position] == "M" ) { cout << int(Register3) ;}
     else if ( Program[Position] == "N" ) { if ( Register1 == Register2 ) Position = Register4[1]-1 ;}
     else if ( Program[Position] == "O" ) { if ( Register1 != Register2 ) Position = Register4[1]-1 ;}

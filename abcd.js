@@ -198,7 +198,7 @@ abcd = function(program, input, outputElem) {
       Mode = (Mode+1)%2;
       break;
     case "?":
-      if(readInput >= input.length + 1)
+      if(readInput > input.length + 1)
         Finished=1;
       break;
     }

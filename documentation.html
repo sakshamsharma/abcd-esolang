@@ -23,7 +23,7 @@
       <h1>
         <a id="abcd-esolang" class="anchor" href="#abcd-esolang" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>abcd-esolang Documentation</h1>
 
-      <strong>Link to </strong> <a id="anchor" href="http://www.acehack.org/abcd-esolang">Home Page</a>
+      <strong>Link to </strong> <a id="anchor" href="http://chaos.techkriti.org">Home Page</a>
 
       <p>abcd is an esoteric language. In other words, it is a language deliberately made obfuscated and confusing. Trivial tasks too might be quite tough to accomplish while programming in this language. That is the point of the competition.</p>
       <p>In Chaos ’16, you will be attempting to write computer programs to accomplish certain tasks using this language. These tasks would range from simple ones, to some really tricky ones.</p>
@@ -38,9 +38,9 @@
       <h3 id="register3---the-result-register">Register3 - The result register</h3>
       <p>This is the result register. This will store the result of instructions if any. For example in the above mentioned sum exercise, the result would be stored in this register.</p>
       <p>The two registers available as a tuple are meant for specialized operations. They are modelled as follows: Register4[2], where Register4[0] is the memory pointer, and Register4[1] is the position pointer.</p>
-      <h3 id="the-memory-pointer">The memory pointer</h3>
+      <h3 id="the-memory-pointer">The memory pointer: Register4[0]</h3>
       <p>One of them lets you write integer values to memory locations, and also to retrieve values from it. You can store intermediate results in the memory using this. For example, if this register stores the value 0 right now and you call the instruction to write the value of Register3 to memory, it will write that value to Memory[0].</p>
-      <h3 id="the-position-pointer">The position pointer</h3>
+      <h3 id="the-position-pointer">The position pointer: Register4[1]</h3>
       <p>The other lets you jump to the position in the program corresponding to the integer stored in it. For example, if that register stores 0, you can jump to the 0th location of the program, that is, to the beginning. This is useful for looping statements.</p>
       <p>You will also have a <em>?</em> instruction which will let you stop the program if the complete input has been read. This will be useful when you need to read an arbitrary amount of input.</p>
       <p>There will be a Mode bit. This will be either 0 or 1. You have instructions to add or subtract some values to Register4[Mode]. This will come in handy if you need to modify the memory or the position pointer.</p>
@@ -199,7 +199,7 @@ TTGaaaCL</code></pre>
       Ignore the -1.
 
     case &quot;R&quot;:
-      if(Register3) Position = Register4[1]-1;
+      if(Register3==0) Position = Register4[1]-1;
       Basically jump to the position stored in Register4[1].
       Ignore the -1.
 
