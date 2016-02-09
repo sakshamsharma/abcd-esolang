@@ -46,3 +46,6 @@ This is slightly more tough. You should install MinGW and get an installation of
 # NOTE
 We've tried to keep both the C++ and the JavaScript interpreters to behave the same, it may happen that they may not.
 The judging will be done on the C++ interpreter.
+
+# DOCUMENTATION
+It is available here [http://chaos.techkriti.org/documentation.html]
